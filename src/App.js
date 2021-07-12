@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'
-import QuickSilverSearch from './QuickSilverSearch';
+import QuickSilverSearch from './QuickSilverSearch/QuickSilverSearch';
 
 
 class App extends Component {
