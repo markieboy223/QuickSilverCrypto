@@ -39,6 +39,7 @@ import logo from './../Images/Quicksilver.png'
         {filteredCoins.map (coin => {
         return (
             <Coin key={coin.id} 
+            rank={coin.market_cap_rank}
             name={coin.name} 
             image={coin.image} 
             symbol={coin.symbol}

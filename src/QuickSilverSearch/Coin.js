@@ -1,11 +1,12 @@
 import React from 'react'
 import './Coin.css'
 
-const Coin = ({name, image, symbol, price, volume, priceChange, marketcap}) => {
+const Coin = ({rank, name, image, symbol, price, volume, priceChange, marketcap}) => {
     return (
         <div className='coin-container'>
             <div className='coin-row'>
                 <div className='coin'>
+                <h2>{rank} </h2>
                     <img src={image} alt="crypto"/>
                     <h1>{name}</h1>
                     <p className="coin-symbol">{symbol}</p>
