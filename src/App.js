@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-import QuickSilverSearch from './QuickSilverSearch/QuickSilverSearch';
+import React from 'react';
+import './App.css'
+import Navbar from './components/nav/Navbar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
-
-class App extends Component {
-  render() {
+function App() {
     return (
-      <div>
-        <QuickSilverSearch></QuickSilverSearch>
-      </div>
-    )
-  }
+     <Router>
+       <Navbar />
+       <Switch>
+         <Route path="/home" exact component={Home} />
+       </Switch>
+     </Router>
+    );
 }
 
 export default App;
