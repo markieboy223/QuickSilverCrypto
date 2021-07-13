@@ -8,3 +8,11 @@
   background-color: #1a1a1c;
   color: #fff;
 }
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

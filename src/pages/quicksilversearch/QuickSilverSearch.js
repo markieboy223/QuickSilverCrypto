@@ -28,7 +28,6 @@ import logo from './../../Images/Quicksilver.png'
 
     return (
     <div className='coin-app'>
-        <img src={logo} width={100} alt="logo"/>
         <div className='coin-search'>
         <h1 className='coin-text'>QuickSilverSearch</h1>
         <h2 className='coin-text'>Search for any currency</h2>

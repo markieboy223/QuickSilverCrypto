@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from './../../Images/Quicksilver.png'
+import './../../App.css'
 import {
   Nav,
   NavLink,
@@ -9,12 +11,13 @@ import {
 } from './NavBarElements';
 
 const Navbar = () => {
+
   return (
     <>
+    <div className="logo">
+    <img src={logo} width={90} alt="logo"/>
+    </div>
       <Nav>
-        <NavLink to='/home'>
-            <h1>Logo</h1>
-        </NavLink>
         <Bars />
         <NavMenu>
           <NavLink to='/home' activeStyle>
