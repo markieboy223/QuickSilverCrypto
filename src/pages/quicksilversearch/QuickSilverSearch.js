@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './QuickSilverSearch.css'
 import Coin from './Coin';
-import logo from './../Images/Quicksilver.png'
+import logo from './../../Images/Quicksilver.png'
 
  function QuickSilverSearch() {
     const [coins, setCoins] = useState([]);
