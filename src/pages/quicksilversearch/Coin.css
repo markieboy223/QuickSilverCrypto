@@ -10,7 +10,7 @@
     align-items: center;
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
-    width: 900px;
+    width: 100%;
 }
 
 .coin {
@@ -24,6 +24,10 @@
    font-size: 16px;
    width: 150px;
 }
+.coin h2 {
+    font-size: 12px;
+    width: 30px;
+ }
 
 .coin img {
     height: 30px;

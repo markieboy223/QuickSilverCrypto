@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './QuickSilverSearch.css'
 import Coin from './Coin';
-import logo from './../Images/Quicksilver.png'
+import logo from './../../Images/Quicksilver.png'
 
  function QuickSilverSearch() {
     const [coins, setCoins] = useState([]);
@@ -28,7 +28,6 @@ import logo from './../Images/Quicksilver.png'
 
     return (
     <div className='coin-app'>
-        <img src={logo} width={100} alt="logo"/>
         <div className='coin-search'>
         <h1 className='coin-text'>QuickSilverSearch</h1>
         <h2 className='coin-text'>Search for any currency</h2>
@@ -39,6 +38,7 @@ import logo from './../Images/Quicksilver.png'
         {filteredCoins.map (coin => {
         return (
             <Coin key={coin.id} 
+            rank={coin.market_cap_rank}
             name={coin.name} 
             image={coin.image} 
             symbol={coin.symbol}
