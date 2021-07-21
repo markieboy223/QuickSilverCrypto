@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './../../Images/Quicksilver.png'
+import logo from './../../Images/QuickSIlverLogo.png'
 import './../../App.css'
 import {
   Nav,
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
     <div className="logo">
-    <img src={logo} width={90} alt="logo"/>
+    <img src={logo} width={100} alt="logo"/>
     </div>
       <Nav>
         <Bars />
